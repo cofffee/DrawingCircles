@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		BF68C23D1DC6747500DDB54E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68C23C1DC6747500DDB54E /* AppDelegate.swift */; };
 		BF68C23F1DC6747500DDB54E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68C23E1DC6747500DDB54E /* ViewController.swift */; };
-		BF68C2421DC6747500DDB54E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF68C2401DC6747500DDB54E /* Main.storyboard */; };
 		BF68C2441DC6747500DDB54E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF68C2431DC6747500DDB54E /* Assets.xcassets */; };
 		BF68C2471DC6747500DDB54E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF68C2451DC6747500DDB54E /* LaunchScreen.storyboard */; };
+		BF68C24F1DC6751100DDB54E /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68C24E1DC6751100DDB54E /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF68C2391DC6747500DDB54E /* DrawingCircles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingCircles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF68C23C1DC6747500DDB54E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF68C23E1DC6747500DDB54E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF68C2411DC6747500DDB54E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF68C2431DC6747500DDB54E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF68C2461DC6747500DDB54E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF68C2481DC6747500DDB54E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF68C24E1DC6751100DDB54E /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				BF68C23C1DC6747500DDB54E /* AppDelegate.swift */,
 				BF68C23E1DC6747500DDB54E /* ViewController.swift */,
-				BF68C2401DC6747500DDB54E /* Main.storyboard */,
+				BF68C24E1DC6751100DDB54E /* CircleView.swift */,
 				BF68C2431DC6747500DDB54E /* Assets.xcassets */,
 				BF68C2451DC6747500DDB54E /* LaunchScreen.storyboard */,
 				BF68C2481DC6747500DDB54E /* Info.plist */,
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					BF68C2381DC6747500DDB54E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F7GY35J799;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,7 +126,6 @@
 			files = (
 				BF68C2471DC6747500DDB54E /* LaunchScreen.storyboard in Resources */,
 				BF68C2441DC6747500DDB54E /* Assets.xcassets in Resources */,
-				BF68C2421DC6747500DDB54E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF68C24F1DC6751100DDB54E /* CircleView.swift in Sources */,
 				BF68C23F1DC6747500DDB54E /* ViewController.swift in Sources */,
 				BF68C23D1DC6747500DDB54E /* AppDelegate.swift in Sources */,
 			);
@@ -144,14 +145,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF68C2401DC6747500DDB54E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF68C2411DC6747500DDB54E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF68C2451DC6747500DDB54E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,7 +253,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F7GY35J799;
 				INFOPLIST_FILE = DrawingCircles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kevin.DrawingCircles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +267,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F7GY35J799;
 				INFOPLIST_FILE = DrawingCircles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kevin.DrawingCircles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +296,7 @@
 				BF68C24D1DC6747500DDB54E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
